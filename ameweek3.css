@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0077cc;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* hovering */
+.hero button:hover {
+  background-color: #005fa3;
+}
+
+/* Projects Section */
+.about {
+  background: #e0f0ff;
+  padding: 3rem 1rem;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.child {
+  background: white;
+  padding: 2rem;
+  border: 2px solid #0077cc;
+  border-radius: 8px;
+  width: 200px;
+}
+
+/* Responsive Media */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
